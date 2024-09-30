@@ -1,4 +1,4 @@
-GENERATES = prog README libout.a prog-a prog-so liboutput.so
+GENERATES = prog README liboutput_static.a prog-a prog-so liboutput.so
 TRASH = *.o *~ o.* *.a outfile* 
 CFLAGS = -Wall
 
