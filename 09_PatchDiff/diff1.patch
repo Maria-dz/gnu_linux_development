@@ -1,0 +1,13 @@
+--- lab.c	2024-11-25 22:58:30
++++ lab1.c	2024-11-25 23:01:35
+@@ -55,8 +55,8 @@
+ 
+ int main(int argc, char *argv[]){
+     srand(time(NULL));
+-    int m = 6;
+-    int n = 6; 
++    int m = atoi(argv[1]);
++    int n = atoi(argv[1]); 
+     char wall = '#';
+     char space = '.';
+ 

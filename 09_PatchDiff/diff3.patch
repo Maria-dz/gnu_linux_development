@@ -1,0 +1,20 @@
+--- lab.c	2024-11-25 22:58:30
++++ lab3.c	2024-11-25 23:07:24
+@@ -54,11 +54,12 @@
+ }
+ 
+ int main(int argc, char *argv[]){
+-    srand(time(NULL));
+-    int m = 6;
+-    int n = 6; 
+-    char wall = '#';
+-    char space = '.';
++    srand(atoi(argv[1]));
++    char* spw = argv[2];
++    int m = atoi(argv[3]);
++    int n = atoi(argv[3]); 
++    char wall = spw[1];
++    char space = spw[0];
+ 
+     char **matrixMatrices = (char **)malloc((m*2 + 1) * sizeof(char*));
+     for (int i = 0; i < (m*2 + 1); i++) {
